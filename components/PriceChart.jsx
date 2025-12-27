@@ -10,7 +10,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { getPriceHistory } from "@/app/actions";
+import { getPriceHistory } from "@/app/action";
 import { Loader2 } from "lucide-react";
 
 export default function PriceChart({ productId }) {
