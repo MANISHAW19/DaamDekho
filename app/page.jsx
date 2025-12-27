@@ -38,15 +38,15 @@ export default async function Home() {
   return (
     <main className="min-h-screen bg-linear-to-br from-orange-50 via-white to-orange-50">
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <header className="bg-white/70 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-15">
+        <div className="max-w-6xl mx-auto px-3 py-3 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <Image
               src="/logo.png"
               alt="Daam Dekho Logo"
-              width={600}
-              height={200}
-              className="h-10 w-auto"
+              width={800}
+              height={500}
+              className="h-23 w-auto"
             />
           </div>
 
@@ -58,16 +58,27 @@ export default async function Home() {
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-6 py-2 rounded-full text-sm font-medium mb-6">
-            Made with ❤️ by Manish Shaw 
+            Made by Manish Shaw 
           </div>
 
-          <h2 className="text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-            Never Miss a Price Drop
+          <h2 className="text-5xl sm:text-6xl font-extrabold text-gray-900 mb-4 tracking-tight text-center">
+            <span className="block">Wishlist Tumhari,</span>
+
+            {/* Stronger, uppercase, underlined and slightly highlighted */}
+            <span className="block mt-1 uppercase text-5xl sm:text-6xl font-black underline underline-offset-7 decoration-amber-400 decoration-4 rounded-lg inline-block px-3 bg-gradient-to-r from-amber-50 to-transparent">
+              Tracking Hamari
+            </span>
           </h2>
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-            Track prices from any e-commerce site. Get instant alerts when
-            prices drop. Save money effortlessly.
+
+          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto text-center leading-relaxed">
+            Track prices from any e-commerce site <br />
+            Price drop hote hi{" "}
+            <span className="font-semibold bg-yellow-300 text-yellow-800 px-2 py-0.5 rounded-md shadow-sm inline-flex items-center">
+              alert
+            </span>
+            
           </p>
+
 
           <AddProductForm user={user}/>
 
