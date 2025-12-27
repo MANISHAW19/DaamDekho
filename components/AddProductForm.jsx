@@ -1,13 +1,12 @@
 "use client";
 
 import { useState } from "react";
-// import { addProduct } from "@/app/actions";
+import { addProduct } from "@/app/action";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { AuthModal } from "./AuthModal";
-import { addProduct } from "@/app/action";
 
 export default function AddProductForm({ user }) {
   const [url, setUrl] = useState("");

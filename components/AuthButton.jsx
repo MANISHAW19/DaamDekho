@@ -19,18 +19,18 @@ const AuthButton = ({user}) => {
     }
   return (
     <>
-    <Button 
-    onClick={()=> setShowAuthModal(true)}
-    variant="default"
-    size="sm"
-    className="bg-orange-500 hover:bg-orange-600 gap-2">
-        <LogIn className=" h-4 w-4" />Sign In 
-    </Button>
+        <Button 
+        onClick={()=> setShowAuthModal(true)}
+        variant="default"
+        size="sm"
+        className="bg-orange-500 hover:bg-orange-600 gap-2">
+            <LogIn className=" h-4 w-4" />Sign In 
+        </Button>
 
-    <AuthModal 
-       isOpen={showAuthModal}
-       onClose={()=> setShowAuthModal(false)}
-     />
+        <AuthModal 
+           isOpen={showAuthModal}
+           onClose={()=> setShowAuthModal(false)}
+         />
     </>
   )
 }

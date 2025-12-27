@@ -35,7 +35,7 @@ export async function addProduct(formData) {
 
     // Check if product exists to determine if it's an update
     const { data: existingProduct } = await supabase
-      .from("products")
+      .from("product")
       .select("id, current_price")
       .eq("user_id", user.id)
       .eq("url", url)
@@ -57,7 +57,7 @@ export async function addProduct(formData) {
           updated_at: new Date().toISOString(),
         },
         {
-          onConflict: "user_ id,url", // Unique constraint on user_id + url
+          onConflict: "user_id,url", // Unique constraint on user_id + url
           ignoreDuplicates: false, // Always update if exists
         }
       )

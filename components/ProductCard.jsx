@@ -29,16 +29,7 @@ export default function ProductCard({ product }) {
     if (!confirm("Remove this product from tracking?")) return;
 
     setDeleting(true);
-    const result = await deleteProduct(product.id);
-
-    if (result.error) {
-      toast.error(result.error);
-    } else {
-      toast.success(result.message || "Product deleted successfully!");
-      setUrl("");
-    }
-
-    setDeleting(false);
+    await deleteProduct(product.id);
   };
 
   return (
