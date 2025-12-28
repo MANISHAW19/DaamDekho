@@ -90,8 +90,8 @@ export default async function Home() {
                   key={title}
                   className="bg-white p-6 rounded-xl border border-gray-200"
                 >
-                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                    <Icon className="w-6 h-6 text-orange-500" />
+                  <div className="w-12 h-12 bg-[#1DBF38] hover:bg-[#18a630] rounded-lg flex items-center justify-center mb-4 mx-auto">
+                    <Icon className="w-6 h-6 text-white-500" />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">{title}</h3>
                   <p className="text-sm text-gray-600">{description}</p>
